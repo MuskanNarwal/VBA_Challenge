@@ -1,4 +1,5 @@
 Attribute VB_Name = "Module1"
+
 Sub Script()
 
     Dim i As Long
@@ -101,7 +102,7 @@ Sub Script()
                 
                 ' Calculate the percentage change
                 If openingPrice <> 0 Then
-                    PercentChange = ((closingPrice - openingPrice) / openingPrice)
+                    PercentChange = ((closingPrice - openingPrice) / openingPrice) * 100
                 Else
                     PercentChange = 0
                 End If
@@ -166,4 +167,5 @@ Next ws
 
 
 End Sub
+
 
